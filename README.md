@@ -14,7 +14,19 @@
 
 3. Re-renders with same props
 
- -> 
+ -> Quando um componente renderiza varias vezes com as mesmas propriedades.
+ 
+4. Medium o big sizes
+
+ -> Não utilizar em componentes muito pequenos
+
+## useMemo
+
+ 1. É utilizando quando eu tenho funções que executam um determinado cálculo ou operação, que consequentemente entram no fluxo de renderização caso algum estado que não está diretamente ligado ao cálculo muda. Então o useMemo só realiza aquela operação ou renderiza aquele método caso a informação que ele precisa mudar.
+
+## useCallback
+
+ 1. Resolver problemas de igualdade referencia, quando uma função é passada por propriedade a um componente e evitando daquela função ser recriada em memória caso o componente pai atualize.
 
 
 
